@@ -30,49 +30,6 @@ Each folder is a standalone NetBeans/Ant Java project with its own `src/`, `buil
 - Apache Ant (optional, if you want to run with Ant)
 - NetBeans (optional, if you want to open projects in an IDE)
 
-## How to Run
-
-You can run each module independently.
-
-### Option 1: Using NetBeans
-
-1. Open the desired project folder (`serial`, `parallel`, `SISD`, `SIMD`, `MISD`, or `MIMD`) in NetBeans.
-2. Run the project.
-
-### Option 2: Using Command Line (javac/java)
-
-From repository root:
-
-```bash
-# Serial
-javac -d out serial/src/serial/Serial.java
-java -cp out serial.Serial
-
-# Parallel
-javac -d out parallel/src/parallel/Parallel.java
-java -cp out parallel.Parallel
-
-# SISD
-javac -d out SISD/src/sisd/SISD.java
-java -cp out sisd.SISD
-
-# SIMD
-javac -d out SIMD/src/simd/SIMD.java
-java -cp out simd.SIMD
-
-# MISD
-javac -d out MISD/src/misd/MISD.java
-java -cp out misd.MISD
-
-# MIMD
-javac -d out MIMD/src/mimd/MIMD.java
-java -cp out mimd.MIMD
-```
-
-Note:
-- `MISD` requires keyboard input (temperature value).
-- Output order in thread-based modules (`MISD`, `MIMD`, and `parallel`) may vary because of concurrent execution.
-
 ## Short Explanation of Each Module
 
 1. `Serial`:
